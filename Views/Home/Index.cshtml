@@ -1,0 +1,242 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "ISC";
+}
+
+@*--------------------------PRIMEIRA LINHA DO CÓDIGO--------------------------*@
+
+@*--------------------------TEXTO--------------------------*@
+
+<div class="container">
+  <div class="row">
+        <div class="col-md-6">
+            <h1>Iniciativa Saúde da Cidade</h1>
+            <p>
+                Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+            
+            <p>
+                Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+
+            <p>
+                Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+            </p>
+        </div>
+
+        @*--------------------------IMAGEM--------------------------*@
+
+        <div class="col-md-6">
+            <figure class="figure">
+                <figcaption class="figure-caption text-center">
+                   <img src="/img/a.jpg" class="figure-img img-fluid rounded" alt="Empresas Apoiadoras">
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<br>
+
+@*--------------------------SEGUNDA LINHA DO CÓDIGO--------------------------*@
+
+@*--------------------------FORMULÁRIO--------------------------*@
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" id="form">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Entre em contato:</h2>
+                    <p>Envie-nos uma mensagem e fique por dentro de nossos eventos</p>
+
+                    <form method="POST" id="formCad">
+                         <div class="form-group">
+                            <label>Nome:</label>
+                            <input asp-for="Nome"  class="form-control" id="nome">
+                        </div>
+        
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input asp-for="Email" type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mensagem (opcional):</label>
+                            <textarea asp-for="Mensagem" rows="4" cols="50" class="form-control" id="mensagem"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" id="btnEnvio" />
+
+                            <!--<p id="pMensagem" class="text-success">@ViewBag.Sucesso</p>-->
+                            <!--<p id="pMensagem2" class="text-danger">@ViewBag.Falha</p>-->
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        @*--------------------------LINKS DIVIDIDOS EM 3 COLUNAS--------------------------*@
+        
+        <div class="col-md-6">
+            <div class="row">
+
+                @*--------------------------LINK 1 AGENDA DE EVENTOS--------------------------*@
+
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#AgendadeEventos"><img src="/img/agenda.jpg" class="figure-img img-fluid rounded" alt="Agenda de Eventos">Agenda de Eventos</a>
+                        </figcaption>
+                    </figure>
+                    
+                    @*--------------------------MODAL--------------------------*@
+                    
+                    <div class="modal fade" id="AgendadeEventos" tabindex="-1" aria-labelledby="AgendadeEventos" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="AgendadeEventos">Agenda de Eventos</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <p>25/09/2023 - 10h00 - Evento 1</p>
+                                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                    </div>
+
+                                    <div>
+                                        <p>26/09/2023 - 10h00 - Evento 2</p>
+                                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                    </div>
+
+                                    <div>
+                                        <p>27/09/2023 - 10h00 - Evento 3</p>
+                                        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                    </div>
+                                </div>
+      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*--------------------------LINK 2 DICAS DE VIDA SAUDÁVEL--------------------------*@
+
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#Dicas"><img src="/img/dicas1.jpg" class="figure-img img-fluid rounded" alt="Vida Saudável">Dicas de Vida Saudável</a>
+                        </figcaption>
+                    </figure>
+
+                    @*--------------------------MODAL 2--------------------------*@
+
+                    <div class="modal fade" id="Dicas" tabindex="-1" aria-labelledby="Dicas" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Dicas">Dicas de Vida Saudável</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div>                                       
+                                        <div>                            
+                                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+                                        </div>
+
+                                        <div>                            
+                                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+                                        </div>
+
+                                        <div>                            
+                                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*--------------------------LINK 3 APOIADORES--------------------------*@
+
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <figcaption class="figure-caption text-center">
+                            <a href="#" data-toggle="modal" data-target="#Apoiadores"><img src="/img/apoiadores.jpg" class="figure-img img-fluid rounded" alt="Empresas Apoiadoras">Apoiadores</a>
+                        </figcaption>
+                    </figure>
+
+                    @*--------------------------MODAL 3--------------------------*@
+
+                    <div class="modal fade" id="Apoiadores" tabindex="-1" aria-labelledby="Apoiadores" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Apoiadores">Apoiadores</h5>
+                                </div>
+                                <div class="modal-body">
+
+                                     @*--------------------------APOIADOR 1--------------------------*@
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/img/senac.png" width="120px"><br>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div> 
+                                                <h5>Senac</h5>                            
+                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @*--------------------------APOIADOR 2--------------------------*@             
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/img/des.png" width="150px"><br>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div>  
+                                                <h5>Desinchá</h5>                          
+                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    @*--------------------------APOIADOR 3--------------------------*@
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/img/smf.jpg" width="120px"><br>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div>    
+                                                <h5>Smart Fit</h5>                         
+                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    @*--------------------------APOIADOR 4--------------------------*@
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/img/amil.png" width="120px"><br>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div>       
+                                                <h5>Amil</h5>                      
+                                                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           
