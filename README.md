@@ -1,4 +1,4 @@
-Projeto MVC realizado no curso de Informática para Internet do Senac - 2023.
+Projeto MVC realizado no 2º módulo do curso de Informática para Internet do Senac - 09/2023.
 
 
 Iniciativa Saúde da Cidade é um hotsite criado para apresentar um projeto que incentiva práticas de vida saudável na cidade.
