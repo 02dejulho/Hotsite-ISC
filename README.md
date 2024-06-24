@@ -13,6 +13,8 @@ Projeto MVC desenvolvido no curso técnico de informática para internet do Sena
 .NET 3.1; Registro de logs para ajudar a monitorar o comportamento da aplicação e diagnosticar problemas;  Entity Framework; Uso de DataAnnotations no form, CSS para posicionamento e responsividade; My SQL e Xampp (PHP MyAdmin), Uso de TryCatch para identificar a conexão com o banco de dados.
 <br>
 
+![hotsiteisc](https://github.com/02dejulho/biblioteca-senac/assets/142263885/b54c3458-8ce3-48f9-8ce4-876f76c71094)
+
 
 
 
